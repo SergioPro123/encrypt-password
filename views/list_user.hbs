@@ -1,0 +1,79 @@
+<html lang='es'>
+
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' href='assets/bootstrap/dist/css/bootstrap.min.css' />
+
+        <link rel='stylesheet' href='assets/css/all.min.css' />
+        <link rel='stylesheet' href='assets/css/normalize.css' />
+        <link
+            href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap'
+            rel='stylesheet'
+        />
+        <link rel='icon' href='assets/images/infinito.png' />
+        <link rel='stylesheet' href='assets/css/main.css' />
+        <link rel='stylesheet' href='assets/css/notify.css' />
+        <title>Lista</title>
+    </head>
+
+    <body>
+        <!-- FORMULARIO RESPONSIVE DESIGN CRISTHIAN MAHECHA [^^] -->
+
+        <!-- FONDO BURBUJA -->
+        <div class='burbuja'>
+            <div class='burbuja2'></div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class='container'>
+            <div class='container-center'>
+
+                <!-- ABRE CONTAINER FULL -->
+                <div class='container-full' style='overflow-y: auto;'>
+                    <div>
+                        <button type='button' onclick='cerrarSesion()' class='btn btn-danger'>Cerrar Sesión</button>
+                    </div>
+                    <br />
+                    <table class='table'>
+                        <thead>
+                            <tr>
+                                <th scope='col'>#</th>
+                                <th scope='col'>Nombre</th>
+                                <th scope='col'>Estado</th>
+                                <th scope='col'>Correo</th>
+                                <th scope='col'>Google</th>
+                                <th scope='col'>Password Encrypt</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each usuarios as |usuario|}}
+                                <tr>
+                                    <th scope='row'>1</th>
+                                    <td>{{usuario.nombre}}</td>
+                                    <td>{{usuario.estado}}</td>
+                                    <td>{{usuario.correo}}</td>
+                                    <td>{{usuario.google}}</td>
+                                    <td>{{usuario.password}}</td>
+
+                                </tr>
+                            {{/each}}
+                        </tbody>
+                    </table>
+                </div>
+                <!-- CIERRE CONTAINER FLEX -->
+            </div>
+        </div>
+        <script src='assets/js/jquery-3.5.1.min.js'></script>
+        <script src='assets/js/notify.js'></script>
+
+        <script src='assets/js/funciones.js'></script>
+
+        <script>
+            function existCookie(clave) { var name = clave + "="; var ca = document.cookie.split(';'); for (var i = 0; i
+            < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == ' ') c = c.substring(1); if (c.indexOf(name) == 0)
+            return true; } return false; } if (!existCookie("Authorization")) cerrarSesion();
+        </script>
+    </body>
+
+</html>

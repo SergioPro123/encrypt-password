@@ -1,0 +1,97 @@
+<html lang='es'>
+
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='stylesheet' href='assets/css/all.min.css' />
+        <link rel='stylesheet' href='assets/css/normalize.css' />
+        <link
+            href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap'
+            rel='stylesheet'
+        />
+        <link rel='icon' href='assets/images/infinito.png' />
+        <link rel='stylesheet' href='assets/css/main.css' />
+        <title>Registro</title>
+    </head>
+
+    <body>
+        <!-- FORMULARIO RESPONSIVE DESIGN CRISTHIAN MAHECHA [^^] -->
+
+        <!-- FONDO BURBUJA -->
+        <div class='burbuja'>
+            <div class='burbuja2'></div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class='container' style='width: 65%;'>
+            <div class='container-center'>
+
+                <!-- ABRE CONTAINER FLEX -->
+                <div class='container-flex'>
+                    <div class='form'>
+
+                        <!-- TITULO FORM -->
+                        <div class='form-title'>
+                            <h1>Registro</h1>
+                            <div class='title-infy'>
+                                <img src='assets/images/infinito.png' alt='infy' width='18%' />
+                                <h1 class='infy'>Infinity</h1>
+                            </div>
+                            <p id='errorRegistro'></p>
+                        </div>
+
+                        <!-- FORMULARIO FORM/INPUTS -->
+                        <form id='formRegister' method='POST' enctype='application/x-www-form-urlencoded'>
+                            <label for='nombre' generated='true' class='error'></label>
+                            <div class='inputs'>
+                                <i class='fas fa-user-friends'></i>
+                                <input type='text' placeholder='Nombre' name='nombre' id='nombre' required />
+                            </div>
+                            <label for='correo' generated='true' class='error'></label>
+                            <div class='inputs'>
+                                <i class='fa fa-envelope' aria-hidden='true'></i>
+                                <input type='email' placeholder='Correo' name='correo' id='correo' required />
+                            </div>
+                            <label for='password' generated='true' class='error'></label>
+                            <div class='inputs'>
+                                <i class='fa fa-key' aria-hidden='true'></i>
+                                <input
+                                    type='password'
+                                    placeholder='Contraseña'
+                                    name='password'
+                                    id='password'
+                                    required
+                                />
+                            </div>
+                            <input type='submit' value='REGISTRARME' class='boton' />
+                        </form>
+                        <a href='/login'>
+                            <p>Volver</p>
+                        </a>
+                    </div>
+                    <!-- CIERRA CONTAINER FORMULARIO -->
+
+                    <!-- TEXTO FORMULARIO -->
+                    <div class='container-formText register'>
+                        <div class='formText'>
+                            <img src='assets/images/infinitoWhite.png' alt='Infy' width='20%' />
+                            <h2>infinity</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed varius libero.
+                                Praesent hendrerit fringilla convallis. Nam eu urna orci. Ut mi erat, tristique sit amet
+                                suscipit a, semper vitae ante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CIERRE TEXTO FORMULARIO -->
+                </div>
+                <!-- CIERRE CONTAINER FLEX -->
+            </div>
+        </div>
+        <script src='assets/js/jquery-3.5.1.min.js'></script>
+        <script src='assets/js/funciones.js'></script>
+        <script src='assets/js/register.js'></script>
+        <script src='assets/js/jquery.validate.min.js'></script>
+    </body>
+
+</html>

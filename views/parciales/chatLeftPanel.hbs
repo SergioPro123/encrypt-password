@@ -1,0 +1,78 @@
+
+            <!-- .chat-left-panel -->
+            <div id="side" class="wchat-list wchat-one chat-left-aside left">
+                <div class="open-panel"><i class="ti-angle-right"></i></div>
+                <div class="chat-left-inner">
+                    <div id="my-profile" style="display: none;">
+                    </div>
+                    <div id="contact-list">
+                        <header class="wchat-header wchat-chat-header top">
+                            <div class="chat-avatar">
+                                <div class="avatar icon-user-default" style="height: 40px; width: 40px;">
+                                    <div class="avatar-body userimage"><img id="imgPerfil" src="storage/user_image/avatar_default.png" class="avatar-image is-loaded" width="100%"></div>
+                                </div>
+
+                            </div>
+                            <div class="chat-body">
+                                <div class="chat-main"><h2 class="chat-title" dir="auto"><span class="wchatellips personName" id='usuarioName'></span></h2></div>
+                            </div>
+                            <div class="wchat-chat-controls">
+                                <div class="menu menu-horizontal">
+                                    <div class="menu-item active dropdown pull-right">
+                                        <button class="icon dropdown-toggle" data-toggle="dropdown" href="#"><span class="font-19"><i class="icon icon-options-vertical"></i></span></button>
+                                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                                            <li><a href="#"><i class="ti-user"></i> Mi Perfil</a></li>
+                                            <li><a href="#"><i class="ti-wallet"></i> Editar Perfil</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#" id="cerrarSesion"><i class="fa fa-power-off" ></i>Salir</a></li>
+                                        </ul>
+                                        <!-- /.dropdown-user -->
+                                    </div>
+                                    <div class="menu-item right-side-toggle"><button class="icon ti-settings font-20" title="Attach"></button><span></span></div>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="form-material">
+                            <input class="form-control p-lr-20 live-search-box search_bg" id="searchbox" type="text" placeholder="Search By Username or Email">
+                        </div>
+                        <div class="contact-drawer">
+                            <ul class="chatonline drawer-body contact-list" id="display" data-list-scroll-container="true" style="display: block;">
+                                <li class="person chatboxhead active" id="chatbox1_Deven" data-chat="person_1" href="javascript:void(0)" onclick="javascript:chatWith('Deven','1','deven.jpg','Online')">
+                                    <a href="javascript:void(0)">
+                                        <span class="userimage profile-picture min-profile-picture"><img src="storage/user_image/Deven.jpg" alt="Deven" class="avatar-image is-loaded bg-theme" width="100%"></span>
+                                        <span>
+                                            <span class="bname personName">Deven Patel</span>
+                                            <span class="personStatus"><span class="time Online"><i class="fa fa-circle" aria-hidden="true"></i></span></span>
+                                            <span class="count"><span class="icon-meta unread-count">2</span></span><br>
+                                            <small class="preview"><span class="Online">Online</span></small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="person chatboxhead " id="chatbox1_John" data-chat="person_2" href="javascript:void(0)" onclick="javascript:chatWith('John','2','avatar_default.png','last seen 23 days ago')">
+                                    <a href="javascript:void(0)">
+                                        <span class="userimage profile-picture min-profile-picture"><img src="storage/user_image/avatar_default.png" alt="John" class="avatar-image is-loaded bg-theme" width="100%"></span>
+                                        <span>
+                                            <span class="bname personName">John Cena</span>
+                                            <span class="personStatus"><span class="time Offline"><i class="fa fa-circle" aria-hidden="true"></i></span></span>
+                                            <span class="count"></span><br>
+                                            <small class="preview"><span class="Offline">last seen 23 days ago</span></small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="person chatboxhead active" id="chatbox1_Kristina" data-chat="person_3" href="javascript:void(0)" onclick="javascript:chatWith('Kristina','3','Kristina.jpg','Offline')">
+                                    <a href="javascript:void(0)">
+                                        <span class="userimage profile-picture min-profile-picture"><img src="storage/user_image/Kristina.jpg" alt="Deven" class="avatar-image is-loaded bg-theme" width="100%"></span>
+                                        <span>
+                                            <span class="bname personName">Kristina</span>
+                                            <span class="personStatus"><span class="time Offline"><i class="fa fa-circle" aria-hidden="true"></i></span></span>
+                                            <span class="count"></span><br>
+                                            <small class="preview"><span class="Offline">Offline</span></small>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .chat-left-panel -->

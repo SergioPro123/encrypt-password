@@ -1,0 +1,179 @@
+<div tabindex="-1" id="main right" class="pane wchat-chat wchat-two chat-right-aside right" style="visibility: hidden;">
+
+
+                <div class="wchat-chat-tile"></div>
+
+                <header class="wchat-header wchat-chat-header top" data-user="">
+                    <button class="icon m-r-5 hidden-sm hidden-md hidden-lg open-panel" href="#"><span class="font-19"><i class="icon ti-arrow-left"></i></span></button>
+                    <div class="chat-avatar" id="launchProfile">
+                        <div class="avatar icon-user-default" style="height: 40px; width: 40px;">
+                            <div class="avatar-body userimage profile-picture">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="chat-body">
+                        <div class="chat-main"><h2 class="chat-title" dir="auto"><span class="wchatellips personName">&nbsp;</span></h2></div>
+                        <div class="chat-status wchatellips" id="typing_on">
+                            <!--last seen today at 8:52 PM-->
+                        </div>
+                    </div>
+                    <div class="wchat-chat-controls">
+                        <div class="menu menu-horizontal">
+                            <div class="menu-item active dropdown pull-right">
+                                <button id="MobileChromeplaysound" class="hidden"></button>
+                                <button class="icon dropdown-toggle font-19" data-toggle="dropdown" href="#" id="mute-sound"><i class="icon icon-volume-2"></i></button>
+                            </div>
+                            <div class="mega-dropdown  pull-right"> <button class="dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#" aria-expanded="false"><span class="font-19"><i class="icon fa fa-paperclip"></i></span></button>
+                                <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown" style="width: 100px;right: -13px;box-shadow:0 0 0 rgba(0, 0, 0, 0.05) !important;background: none;">
+                                    <li class="col-sm-12 demo-box">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="white-box text-center bg-purple uploadFile" id="uploadFile"><a href="#" class="text-white" data-toggle="tooltip" title="" data-original-title="Photos"><i class="icon ti-gallery font-19"></i></a></div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="white-box text-center bg-success uploadFile"><a href="#" class="text-white" data-toggle="tooltip" title="" data-original-title="Videos"><i class="icon icon-camrecorder font-19"></i></a></div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="white-box text-center bg-info uploadFile"><a href="#" class="text-white" data-toggle="tooltip" title="" data-original-title="Document"><i class="icon icon-doc font-19"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu-item active dropdown pull-right">
+                                <button class="icon dropdown-toggle" data-toggle="dropdown" href="#"><span class="font-19"><i class="icon icon-options-vertical"></i></span></button>
+                                <ul class="dropdown-menu dropdown-user animated flipInY">
+                                    <li><a href="javascript:void(0)" onclick="javascript:ShowProfile();"><i class="ti-user"></i> Perfil del usuario</a></li>
+                                    <li><a href="javascript:void(0)"><i class="ti-wallet"></i> Email This Chat</a></li>
+                                    <li><a href="javascript:void(0)"><i class="icon-doc"></i>Guardar Chat</a></li>
+                                </ul>
+                                <!-- /.dropdown-user -->
+                            </div>
+                            <div class="menu-item right-side-toggle hidden-xs hidden"><button class="icon ti-settings font-20" title="Attach"></button><span></span></div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="wchat-body wchat-chat-tile-container" style="background-size: cover;">
+                    <div>
+                        <span>
+                            <div class="scroll-down" style="transform: scaleX(1) scaleY(1); opacity: 1; visibility:hidden;">
+                                <span class="ti-angle-down"></span>
+                            </div>
+                        </span>
+                        <div class="wchat-chat-msgs wchat-chat-body lastTabIndex" tabindex="0">
+                            <div class="wchat-chat-empty"></div>
+                            <div class="message-list">
+                                <div class="chat-list" id="resultchat">
+                                    <!--Aquí el contenido viene dinámicamente-->
+
+                                    <div id="chatbox_Deven" class="chat chatboxcontent active-chat" data-chat="person_1" client="Deven">
+                                        <div class="col-xs-12 p-b-10">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Deven" src="storage/user_image/Deven.jpg" class="bg-theme">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Deven Patel</h4>
+                                                    <p><a url="storage/user_files/image-chat.jpg" onclick="trigq(this)"><img src="storage/user_files/image-chat.jpg" class="userfiles"></a></p>
+                                                    <b>23 days ago</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 p-b-10 odd">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Bylancer" src="storage/user_image/Bylancer.jpg">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Bylancer</h4>
+                                                    <p>Hi</p>
+                                                    <b>Just Now</b>
+                                                    <span class="msg-status msg-mega"><i class="fa fa-check"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="chatbox_John" class="chat chatboxcontent active-chat" data-chat="person_2" client="John">
+                                        <div class="col-xs-12 p-b-10">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="John" src="storage/user_image/avatar_default.png" class="bg-theme">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>John Cena</h4>
+                                                    <p><video class="userfiles" controls=""><source src="storage/user_files/video.mp4" type="video/mp4">Your browser does not support HTML5 video.</video></p>
+                                                    <b>1 Hours ago</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 p-b-10 odd">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Bylancer" src="storage/user_image/Bylancer.jpg">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Bylancer</h4>
+                                                    <p>Hi, Its really nice, love this video. <br>Please send some comedy video.</p>
+                                                    <b>Just Now</b>
+                                                    <span class="msg-status msg-mega"><i class="fa fa-check"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 p-b-10">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="John" src="storage/user_image/avatar_default.png" class="bg-theme">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>John Cena</h4>
+                                                    <p><a href="storage/user_files/file.zip" class="download-link" download=""></a></p>
+                                                    <b>1 Hours ago</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="chatbox_Kristina" class="chat chatboxcontent active-chat" data-chat="person_3" client="Kristina">
+                                        <div class="col-xs-12 p-b-10">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Kristina" src="storage/user_image/Kristina.jpg" class="bg-theme">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Kristina</h4>
+                                                    <p><video class="userfiles" controls=""><source src="storage/user_files/video.mp4" type="video/mp4">Your browser does not support HTML5 video.</video></p>
+                                                    <b>1 Hours ago</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 p-b-10 odd">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Bylancer" src="storage/user_image/Bylancer.jpg">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Bylancer</h4>
+                                                    <p>Nice.</p>
+                                                    <b>Just Now</b>
+                                                    <span class="msg-status msg-mega"><i class="fa fa-check"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 p-b-10">
+                                            <div class="chat-image  profile-picture max-profile-picture">
+                                                <img alt="Kristina" src="storage/user_image/Kristina.jpg" class="bg-theme">
+                                            </div>
+                                            <div class="chat-body">
+                                                <div class="chat-text">
+                                                    <h4>Kristina</h4>
+                                                    <p>Thank you</p>
+                                                    <b>1 Hours ago</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>

@@ -1,0 +1,9 @@
+CUENTA MONGO:
+correo: adminchat@hotmail.com.
+password: admin@123chat
+
+USUARIO MONGO:
+usuario:adminchat
+password:user@123chat
+
+MONGO_URI: mongodb+srv://adminchat:user@123chat@chat.hvoyu.mongodb.net/michat?retryWrites=true&w=majority

@@ -1,0 +1,119 @@
+<html lang='es'>
+
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' href='assets/bootstrap/dist/css/bootstrap.min.css' />
+
+        <link rel='stylesheet' href='assets/css/all.min.css' />
+        <link rel='stylesheet' href='assets/css/normalize.css' />
+        <link
+            href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap'
+            rel='stylesheet'
+        />
+        <link rel='icon' href='assets/images/infinito.png' />
+        <link rel='stylesheet' href='assets/css/main.css' />
+        <link rel='stylesheet' href='assets/css/notify.css' />
+        <title>Login</title>
+    </head>
+
+    <body>
+        <!-- FORMULARIO RESPONSIVE DESIGN CRISTHIAN MAHECHA [^^] -->
+
+        <!-- FONDO BURBUJA -->
+        <div class='burbuja'>
+            <div class='burbuja2'></div>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class='container'>
+            <div class='container-center'>
+
+                <!-- ABRE CONTAINER FLEX -->
+                <div class='container-flex'>
+                    <div class='form'>
+
+                        <!-- TITULO FORM -->
+                        <div class='form-title'>
+                            <h1>Bienvenido a</h1>
+                            <div class='title-infy'>
+                                <img src='assets/images/infinito.png' alt='infy' width='18%' />
+                                <h1 class='infy'>ThePros</h1>
+                            </div>
+                            <p>Inicie sesión para obtener actualizaciones en el momento de las cosas que le interesan</p>
+                        </div>
+
+                        <!-- FORMULARIO FORM/INPUTS -->
+                        <form method='POST' enctype='application/x-www-form-urlencoded'>
+                            <div class='inputs'>
+                                <i class='fa fa-envelope' aria-hidden='true'></i>
+                                <input type='text' placeholder='Correo' name='correo' id='correo' />
+                            </div>
+                            <div class='inputs'>
+                                <i class='fa fa-key' aria-hidden='true'></i>
+                                <input type='password' placeholder='Contraseña' name='password' id='password' />
+                            </div>
+                            <input type='submit' value='INICIAR SESIÓN' class='boton' />
+                        </form>
+                        <a href='register'>
+                            <p> Registrarme </p>
+                        </a>
+                        <div>
+                            <p>Olvidaste Tu Contraseña? <a href='#'>Recuperar Ahora</a></p>
+                            <p>O</p>
+                            <p>Continua con Redes Sociales</p>
+                        </div>
+
+                        <!-- REDES SOCIALES -->
+                        <ul>
+                            <li>
+                                <div class='red'>
+                                    <a href='#'><i class='fab fa-facebook-f'></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='red'>
+                                    <a href='#'><i class='fab fa-twitter'></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='red'>
+                                    <a href='#'><i class='fab fa-google'></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class='red'>
+                                    <a href='#'><i class='fab fa-instagram'></i></a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- CIERRA CONTAINER FORMULARIO -->
+
+                    <!-- TEXTO FORMULARIO -->
+                    <div class='container-formText login'>
+                        <div class='formText'>
+                            <img src='assets/images/infinitoWhite.png' alt='Infy' width='20%' />
+                            <h2>ThePros</h2>
+                            <p>Esta aplicación fue desarrollada por Sergio Aparicio y Richard Cano, con el objetivo de
+                                practicar y mejorar las habilidades en tecnólogias como JavaScript, Node Js, Sockets,
+                                MongoDB, etc.</p>
+                        </div>
+
+                    </div>
+
+                    <!-- CIERRE TEXTO FORMULARIO -->
+                </div>
+                <!-- CIERRE CONTAINER FLEX -->
+            </div>
+        </div>
+        <script src='assets/js/jquery-3.5.1.min.js'></script>
+        <script src='assets/js/notify.js'></script>
+
+        <script src='assets/js/funciones.js'></script>
+        <script src='assets/js/notificaciones.js'></script>
+        <script src='assets/js/login.js'></script>
+    </body>
+
+</html>
